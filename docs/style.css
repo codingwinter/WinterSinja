@@ -1,69 +1,16 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-    text-align: center;
-}
-
-/* Taskbar */
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: black;
-    padding: 15px 30px;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-
-/* Startbereich */
-.hero {
-    margin-top: 80px;
-}
-
-.hero-logo {
-    width: 150px;
-    margin-bottom: 20px;
-}
-.back-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    background: black;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-family: Arial, sans-serif;
-}
-
-.back-button:hover {
-    background: grey;
-}
+/* Grundlayout */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
+/* Topbar */
 .topbar {
-    background: black;
-    padding: 15px;
+    background-color:  #0a1a3a;; /* dunkelblau */
+    padding: 20px;
 }
 
 .topbar a {
@@ -72,6 +19,11 @@ body {
     text-decoration: none;
 }
 
+.topbar a:hover {
+    color: #5fa8ff;
+}
+
+/* Hero Section */
 .hero {
     padding: 150px 20px;
 }
@@ -87,6 +39,13 @@ body {
     margin-top: 10px;
 }
 
+/* Logo */
+.logo {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+/* Links Section */
 .links {
     padding: 100px 20px;
 }
@@ -96,9 +55,26 @@ body {
     margin: 20px 0;
     font-size: 24px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
-.logo {
-    width: 300px;
-    margin-bottom: 30px;
+
+.links a:hover {
+    color: #5fa8ff;
+}
+
+/* Back Button */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    background: #112a60;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+.back-button:hover {
+    background: #5fa8ff;
 }
