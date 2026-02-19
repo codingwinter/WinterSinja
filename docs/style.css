@@ -98,3 +98,7 @@ body {
     text-decoration: none;
     color: black;
 }
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
