@@ -129,3 +129,17 @@ body {
 .side-menu a:hover {
     background-color: #112a60;
 }
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-btn:hover {
+    color: #5fa8ff;
+}
+
