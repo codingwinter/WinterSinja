@@ -100,23 +100,54 @@ body {
     font-size: 18px;
 }
 
+/* Hamburger */
 .menu-icon {
-    font-size: 28px;
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     cursor: pointer;
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 100%;
+    background: white; /* force white */
+    border-radius: 2px;
+    transition: 0.3s ease;
+    transform-origin: center;
+}
+
+/* ACTIVE STATE: hamburger → X */
+.menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px); /* unsymmetrical X */
+}
+
+.menu-icon.active span:nth-child(2) {
+    opacity: 0; /* hide middle line */
+}
+
+.menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px); /* unsymmetrical X */
 }
 
 /* Side Menu */
 .side-menu {
     position: fixed;
     top: 0;
-    right: -300px; /* hidden initially */
+    right: -300px;
     width: 250px;
     height: 100%;
     background-color: black;
-    padding-top: 80px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    transition: 0.3s ease;
+    transition: right 0.3s ease;
+
+    border-left: 3px solid #112a60; /* BLUE LINE */
 }
 
 .side-menu a {

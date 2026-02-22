@@ -7,13 +7,15 @@
 <body>
 
 <nav class="topbar">
-    <div class="nav-name">Sinja-Ava Becker</div>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="nav-name">Sinja-Ava Becker</div>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
 
 <div id="sideMenu" class="side-menu">
-    <div class="close-btn" onclick="toggleMenu()">✕</div>
-
     <a href="placeholder1.html">Programmierung / Coding</a>
     <a href="placeholder2.html">Grafikdesign & Videoschnitt / Graphic Design & Video Editing</a>
     <a href="placeholder3.html">Kontakt / Contact</a>
@@ -34,10 +36,14 @@
 <script>
 function toggleMenu() {
     const menu = document.getElementById("sideMenu");
+    const icon = document.querySelector(".menu-icon");
+
     if (menu.style.right === "0px") {
         menu.style.right = "-300px";
+        icon.classList.remove("active");
     } else {
         menu.style.right = "0px";
+        icon.classList.add("active");
     }
 }
 </script>
